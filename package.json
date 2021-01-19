@@ -1,0 +1,24 @@
+{
+  "name": "@roko91/web-storage-cache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roko91/web-storage-cache.git"
+  },
+  "keywords": [
+    "web",
+    "storage",
+    "cache",
+  ],
+  "author": "Rosen Dimitrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roko91/web-storage-cache/issues"
+  },
+  "homepage": "https://github.com/roko91/web-storage-cache#readme"
+}
