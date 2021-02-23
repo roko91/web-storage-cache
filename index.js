@@ -13,7 +13,7 @@ module.exports = class WebStorageCache {
     }
 
     updateStore() {
-        this.storage.setItem(this.storeKey, JSON.stringify(this.store));
+        this.storage.setItem(this.storeKey, JSON.stringify(this.store, this.options.storeReplacer));
     }
 
     get(key) {

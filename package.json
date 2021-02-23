@@ -1,6 +1,6 @@
 {
   "name": "@roko91/web-storage-cache",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "web",
     "storage",
-    "cache",
+    "cache"
   ],
   "author": "Rosen Dimitrov",
   "license": "MIT",
