@@ -1,11 +1,14 @@
 'use strict';
 
+const event = new Event('webstoragecachechanged');
+
 module.exports = class WebStorageCache {
     constructor(storeKey, options = {}, storage = null) {
         this.storeKey = storeKey;
         this.options = options;
         this.storage = storage || window.localStorage;
         this.loadStore();
+        window.addEventListener('webstoragecachechanged', () => this.loadStore());
     }
 
     loadStore() {
@@ -14,6 +17,7 @@ module.exports = class WebStorageCache {
 
     updateStore() {
         this.storage.setItem(this.storeKey, JSON.stringify(this.store, this.options.storeReplacer));
+        window.dispatchEvent(event);
     }
 
     get(key) {
